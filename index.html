@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AT Digital Landing Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="font-sans text-gray-800">
+  <!-- Navbar -->
+  <header class="bg-[rgba(79,70,229,1)] text-white relative z-10"> 
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-3xl font-bold">at digital</h1>
+      <nav class="space-x-4 text-sm hidden md:block">
+        <a href="#" class="hover:underline">SERVICES</a>
+        <a href="#" class="hover:underline">ABOUT US</a>
+        <a href="#" class="hover:underline">CONTACT US</a>
+        <a href="#" class="hover:underline">CAREERS</a>
+      </nav>
+      <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-[rgba(79,70,229,1)] py-4 shadow-lg">
+      <nav class="flex flex-col items-center space-y-4 text-lg"> 
+        <a href="#" class="hover:underline block w-full text-center py-2">SERVICES</a>
+        <a href="#" class="hover:underline block w-full text-center py-2">ABOUT US</a>
+        <a href="#" class="hover:underline block w-full text-center py-2">CONTACT US</a>
+        <a href="#" class="hover:underline block w-full text-center py-2">CAREERS</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative">
+    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" class="w-full h-[600px] object-cover" alt="hero image">
+    <div class="absolute top-2/3 left-0 transform -translate-y-1/2 bg-gradient-to-r from-green-400 to-cyan-500 py-8 px-3 w-full md:w-[550px] md:left-16 md:rounded-r-lg">
+      <h2 class="text-white text-4xl md:text-5xl font-bold mb-2 leading-tight">
+        We Crush Your Competitors, Goals, And Sales Records – Without The B.S.
+      </h2>
+      <button class="bg-[rgba(242,141,53,1)] text-white text-sm px-4 py-2 rounded hover:bg-[rgba(220,120,40,1)]">
+        GET FREE CONSULTATION
+      </button>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="max-w-6xl mx-auto px-12 py-16 mt-28"> 
+    <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="w-full md:w-1/2 flex justify-center"> 
+        <img src="desktop.jpg" class="w-64" alt="icon">
+      </div>
+      <div class="w-full md:w-1/2">
+        <h3 class="text-2xl text-[rgba(79,70,229,1)] font-bold">Web & Mobile App Development</h3>
+          <p class="text-md my-2 font-medium"> 
+            Your web and mobile Apps are pieces of the puzzle to grow your business. We use frameworks which tailor content and engagement methods to
+            respond to different intents shown by your potential customers who interact with your business online.
+          </p>
+          <button class="bg-[rgba(242,141,53,1)] text-white text-sm px-4 py-2 rounded hover:bg-[rgba(220,120,40,1)] uppercase"> 
+            LEARN MORE
+          </button>
+      </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row-reverse items-center justify-between gap-6 mt-48"> 
+      <div class="w-full md:w-1/2 flex justify-center"> 
+        <img src="search.jpg" class="w-64" alt="icon">
+      </div>
+      <div class="w-full md:w-1/2">
+        <h3 class="text-2xl text-[rgba(79,70,229,1)] font-bold">Digital Strategy Consulting</h3>
+          <p class="text-md my-2 font-medium"> 
+            Your digital strategy should complement the overall marketing strategy of the company. In online 
+            marketing, each component will never work in isolation and every business needs a different mix. 
+            We provide a clear concept and strategic overview to find the most efficient model for your business.
+          </p>
+          <button class="bg-[rgba(242,141,53,1)] text-white text-sm px-4 py-2 rounded hover:bg-[rgba(220,120,40,1)] uppercase">
+            LEARN MORE
+          </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="bg-gray-50 py-12 mt-16">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-[rgba(79,70,229,1)] mb-8 tracking-tight">Frequently asked questions</h2>
+        <div class="space-y-4" id="faq">
+            <div class="bg-white p-4 rounded shadow">
+              <button class="flex justify-between w-full faq-toggle text-xl font-semibold text-indigo-600">
+                Lorem ipsum dolor sit amet consectetur. Leo at sit eu libero?
+              <span class="text-xl">−</span>
+              </button>
+            <div class="mt-3 text-md text-[rgba(111,108,144,1)] font-normal"> Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.</div>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <button class="flex justify-between w-full faq-toggle text-xl font-semibold">
+                Lorem ipsum dolor sit amet consectetur. Tortor scelerisque integer?
+              <span class="text-xl">+</span>
+              </button>
+            <div class="mt-3 text-md text-[rgba(111,108,144,1)] font-normal hidden"> Lorem ipsum content goes here...</div>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <button class="flex justify-between w-full faq-toggle text-xl font-semibold">
+                Lorem ipsum dolor sit amet consectetur. Faucibus scelerisque nunc?
+              <span class="text-xl">+</span>
+              </button>
+              <div class="mt-3 text-md text-[rgba(111,108,144,1)] font-normal hidden"> Lorem ipsum content goes here...</div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!--footer-->
+  <footer class="bg-[rgba(79,70,229,1)] text-white py-6 text-sm">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-6 gap-0 px-4"> 
+    <div class="md:col-span-2"> 
+      <h3 class="font-bold text-4xl mb-2">at digital</h3>
+        <p class="text-md my-2">Your goal is our target. Not anything in between. We use online marketing platforms and tools to achieve single objective - your
+        business results.</p>
+    </div>
+
+    <div class="hidden md:block md:col-span-2"> </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-x-14 md:col-span-2"><div>
+      <h4 class="text-xl font-semibold mb-2">Our Technologies</h4>
+        <ul class="space-y-1">
+          <li>ReactJS</li>
+          <li>Gatsby</li>
+          <li>NextJS</li>
+          <li>NodeJS</li>
+        </ul>
+    </div>
+    <div>
+      <h4 class="text-xl font-semibold mb-2">Our Services</h4>
+        <ul class="space-y-1">
+          <li>Social Media Marketing</li>
+          <li>Web & Mobile App Development</li>
+          <li>Data & Analytics</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+    <div class="mt-6 text-center text-sm"> 
+    <div class="max-w-lg mx-auto border-t border-white/50 pt-3"> Privacy Policy | Terms & Conditions</div>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
